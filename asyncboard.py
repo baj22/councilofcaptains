@@ -54,7 +54,7 @@ async def main():
     for advisor, placeholder in zip(advisors, placeholders):
         # Display advisor's name and profile picture at the top of their column
         with placeholder.container():
-            st.image(f"images/{advisor['image_filename']}", width=150)
+            st.image(f"{advisor['image_filename']}", width=150)
             st.subheader(advisor['name'])
             advice_placeholder = st.empty()
             # Append task to list of async tasks
